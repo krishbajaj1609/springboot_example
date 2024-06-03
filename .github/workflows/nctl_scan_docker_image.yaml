@@ -35,5 +35,5 @@ jobs:
         chmod +x nctl
 
     - name: Run the Docker command
-      run: ./nctl scan repository --policies ./policy/ --token $NIRMATA_API_KEY --url $NIRMATA_URL
+      run: ./nctl scan repository --policies ./policy/ --publish-token $NIRMATA_API_KEY --url $NIRMATA_URL
     - run: echo "🍏 This job's status is ${{ job.status }}."
