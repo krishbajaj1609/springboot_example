@@ -6,6 +6,10 @@ ARG BUILDER_IMAGE="golang:1.20.6-alpine3.18"
 
 FROM --platform=$BUILD_PLATFORM $BUILDER_IMAGE as builder
 
+#test
+#test
+
+
 WORKDIR /
 COPY . ./
 
