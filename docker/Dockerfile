@@ -9,6 +9,10 @@ FROM --platform=$BUILD_PLATFORM $BUILDER_IMAGE as builder
 WORKDIR /
 COPY . ./
 
+#test
+#test
+
+
 # Get Signer plugin binary
 ARG SIGNER_BINARY_LINK="https://d2hvyiie56hcat.cloudfront.net/linux/amd64/plugin/latest/notation-aws-signer-plugin.zip"
 ARG SIGNER_BINARY_FILE="notation-aws-signer-plugin.zip"
