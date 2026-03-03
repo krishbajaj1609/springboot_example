@@ -1,4 +1,5 @@
 FROM busybox
+#test
 
 ARG BUILD_PLATFORM="linux/amd64"
 ARG BUILDER_IMAGE="golang:1.20.6-alpine3.18"
