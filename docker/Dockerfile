@@ -22,7 +22,8 @@ RUN apt-get update && \
 
 RUN apk update && \
     apk add --no-cache --allow-untrusted curl
-
+#test
+#test
 
 # Build Go binary
 RUN GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -ldflags="-w -s" -o kyverno-notation-aws .
