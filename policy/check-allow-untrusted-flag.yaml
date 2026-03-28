@@ -17,7 +17,7 @@ spec:
         - (Stages[].Commands[?Name=='RUN'].CmdLine[][] | length(@) > `0`): true
       assert:
         any:
-        - message: Dockerfile contains the '--allow-untrusted' which is not preferred
+        - message: Dockerfile contains the '--allow-untrusted' which is not at all preferred
           check:
             ~.(Stages[].Commands[?Name=='RUN'].CmdLine[][]):
                (contains(@, '--allow-untrusted') && (contains(@, 'apk'))): false
